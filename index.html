@@ -1,0 +1,210 @@
+<html>
+    <p>
+        How to declare the arrays ? 
+        <h4 id="declaration_of_arrays"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the first element of the array ?
+        <h4 id="access_first_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the second element of the array ?
+        <h4 id="access_second_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the third element of the array ?
+        <h4 id="access_third_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to get the length of the array ?
+        <h4 id="display_length_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to loop the array array ?
+        <h4 id="loop_the_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add element at the end of the array ?
+        <h4 id="add_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the end of the array ?
+        <h4 id="add_more_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to declare the arrays with alphabets ? 
+        <h4 id="display_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to sort the arrays with alphabets ? 
+        <h4 id="display_sorted_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to reverse the arrays with alphabets ? 
+        <h4 id="display_reverse_array"> 
+        </h4>
+    </p>
+<hr>      
+    <p>
+        How to declare the arrays with numbers ? 
+        <h4 id="display_number_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the maximum number from the arrays ? 
+        <h4 id="display_maximum_number"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the minimum number from the arrays ? 
+        <h4 id="display_minimum_number"> 
+        </h4>
+    </p>
+
+    <h3 style="background-color: red; font-size: 23px;">
+        ADDITIONAL ACTIVITY
+    </h3>
+    <p>
+        How to add element at the start of the array ? Hint use unshift method
+        <h4 id="add_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the start of the array ? Hint use unshift method
+        <h4 id="add_more_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the start of the array ? Hint use shift method
+        <h4 id="remove_element_from_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the end of the array ? Hint use pop method
+        <h4 id="remove_element_from_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to merge two arrays ? Hint define two arrays and then use concat method for eg - array1.concat(array2)
+        <h4 id="merge_two_arrays"> 
+        </h4>
+    </p>
+
+<script>
+
+    //How to declare the arrays ? the id to be refer for innerHTML is declaration_of_arrays
+    var ar1 = ["apple", "mango", "banana"];
+    document.getElementById ("declaration_of_arrays").innerHTML = ar1;
+    console.log(ar1);
+    //How to fetch the first element of the array ? the id to be refer for innerHTML is access_first_element
+     var first = ar1[0];
+     document.getElementById("access_first_element").innerHTML = first;
+     console.log(first);
+    //How to fetch the second element of the array ? the id to be refer for innerHTML is access_second_element
+     var second = ar1[1];
+     document.getElementById("access_second_element").innerHTML = second;
+     console.log(second);
+    //How to fetch the third element of the array ? the id to be refer for innerHTML is access_third_element
+    var third = ar1[2];
+     document.getElementById("access_third_element").innerHTML = third;
+     console.log(third);
+    //How to get the length of the array ? the id to be refer for innerHTML is display_length_of_array
+      var l = ar1.length;
+      document.getElementById("display_length_of_array").innerHTML = l;
+      console.log(l);
+    //How to loop the array ? the id to be refer for innerHTML is loop_the_array
+      var loop = "";
+      for (var i = 0; i<l; i++){
+          loop = loop + ar1[i]+"<br>"
+      };
+      document.getElementById("loop_the_array").innerHTML = loop;
+      console.log(loop);
+    //adding element at the end of the array using push method
+      ar1.push("cherry");
+    //How to add element at the end of the array ? the id to be refer for innerHTML is add_element_at_the_end_of_array
+      document.getElementById("add_element_at_the_end_of_array").innerHTML = ar1;
+      console.log(ar1)
+    //How to more elements at the end of the array ? the id to be refer for innerHTML is add_more_element_at_the_end_of_array
+    ar1.push("cranberry", "watermelon", "orange", "lychee");
+    document.getElementById("add_more_element_at_the_end_of_array").innerHTML = ar1;
+    console.log(ar1);
+    //How to declare array with alphabets ? the id to be refer for innerHTML is display_alphabets_array
+      var alpha = ["a", "b", "i", "z", "e", "d", "r", "f", "s", "x", "c", "v", "n", "m"];
+      document.getElementById("display_alphabets_array").innerHTML = alpha;
+      console.log(alpha);
+    //How to sort array with alphabets ? the id to be refer for innerHTML is display_sorted_alphabets_array
+      alpha.sort();
+      document.getElementById("display_sorted_alphabets_array").innerHTML = alpha;
+      console.log(alpha);
+    //How to reverse the array ? the id to be refer for innerHTML is display_reverse_array
+      alpha.reverse();
+      document.getElementById("display_reverse_array").innerHTML = alpha;
+      console.log(alpha);
+    //How to declare array with numbers ? the id to be refer for innerHTML is display_number_array
+      var num = [1,45,523,686,2,34,908,4444,557,674];
+      document.getElementById("display_number_array").innerHTML = num;
+      console.log(num);
+    //How to find the maximum number from the array with numbers ? the id to be refer for innerHTML is display_maximum_number
+      var max = Math.max.apply(Math,num)
+      document.getElementById("display_maximum_number").innerHTML = max;
+      console.log(max);
+    //How to find the minimum number from the array with numbers ? the id to be refer for innerHTML is display_minimum_number
+      var min = Math.min.apply(Math,num)
+      document.getElementById("display_minimum_number").innerHTML = min;
+      console.log(min);
+    console.log("ADDITIONAL ACTIVITY");
+
+    //Use unshift method to add element at the start of the array . the id to be refer for innerHTML is add_element_at_the_start_of_array
+      ar1.unshift("durian");
+      document.getElementById("add_element_at_the_start_of_array").innerHTML = ar1;
+      console.log(ar1);
+    //Use unshift method to add more elements at the start of the array . the id to be refer for innerHTML is add_more_element_at_the_start_of_array
+       ar1.unshift("grape", "fig", "coconut");
+      document.getElementById("add_more_element_at_the_start_of_array").innerHTML = ar1;
+      console.log(ar1);
+    //Use shift method to remove elements from the start of the array . the id to be refer for innerHTML is remove_element_from_start_of_array
+      ar1.shift();
+      document.getElementById("remove_element_from_start_of_array").innerHTML = ar1;
+      console.log(ar1);
+    //Use pop method to remove elements from the end of the array . the id to be refer for innerHTML is remove_element_from_end_of_array
+      ar1.pop();
+      document.getElementById("remove_element_from_end_of_array").innerHTML = ar1;
+      console.log(ar1);
+    //How declare array with first world country ? 
+     var fwc = ["america", "uk", "india"]
+      console.log(fwc);
+    //How declare array with second world country ? 
+     var swc = [" china", "japan", "indonesia"]
+     console.log(swc);
+    //use concat method to merge two arrays . the id to be refer for innerHTML is merge_two_arrays
+      var fswc = fwc.concat(swc);
+      document.getElementById("merge_two_arrays").innerHTML = fswc;
+      console.log(fswc);
+</script>
+</html>
